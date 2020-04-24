@@ -1,0 +1,126 @@
+.contactbar {
+    background-color: #2a8227;
+    color: black;
+    text-align: center;
+    font-size: 17px;
+    float: center;
+    font-family: Arial;
+    border-style: solid;
+}
+
+.img-txtblock {
+    position: absolute;
+    top: 60%;
+    right: 20px;
+    background-color: transparent;
+    font-family: Roboto;
+    font-size: 32px;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.box {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+}
+
+.box h1 {
+    margin: 5%;
+    font-weight: bold;
+    
+}
+
+
+.imgcol {
+    float: left;
+    width: 30%;
+    padding: 5px;
+    background-color: #2a8227;
+    left:5%;
+    position: relative;
+}
+
+.imgrow::after {
+    content:"";
+    clear: both;
+    display: table;
+    background-color: #2a8227;
+}
+
+.centeredtext {
+    text-align: left;
+    font-family: Arial;
+    font-weight: bold;
+    color: white;
+}
+
+.b-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}   
+
+
+.sitter-column {
+    float: left;
+    width: 30%;
+    padding: 5px;
+    background-color: #2a8227;
+    position: relative;
+    left: 4%;
+}
+
+.sitter-row::after {
+    content: "";
+    clear: both;
+    display: table;
+    background-color: #2a8227;
+}
+
+.logo{
+
+    float:left;
+    width:50px;
+    height:50px;
+
+
+}
+
+.appName{
+
+    font-family: Comic Sans MS;
+}
+
+h2 {
+
+    text-align: center;
+}
+
+
+.sit-button {
+    background-color:#44c767;
+    border-radius:28px;
+    border:1px solid #18ab29;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:17px;
+    padding:20px 31px;
+    margin: 30px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #2f6627;
+    position: relative;
+    left: 40%;
+    width: 160px;
+}
+.sit-button:hover {
+    background-color:#5cbf2a;
+}
+.sit-button:active {
+    position:relative;
+    top:1px;
+}

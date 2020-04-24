@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Home </title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/homepage.css">
+</head>
+<body class='background' style="background-image: url(images/park.jpg);">
+
+	<div class="appName"> 			
+
+		<img class="logo" src="images/logo.jpg">
+		<h1> Pets Playground</h1>
+				
+	</div>
+
+	<nav id="header" >
+		<a href="/">Home</a>
+		<a href="/topsitters">Top Sitters</a>
+		<a href="/login">Account</a>
+	</nav>
+
+			<div class="slidesbody">
+				<div class="container">
+
+
+
+					<div class="slides fade">
+							<div style="max-width: 100%">
+								<img src="images/pets1.jpg" style="width: 100%">
+
+								<div class="img-txtblock box">
+									<h1>Your pet, our passion.</h1> 
+									<h1>We make pet sitting a happier, better, and caring experience.</h1>
+								</div>
+							</div>
+					</div>
+
+					<div class="slides fade">
+							<div style="max-width: 100%">
+								<img src="images/pets2.jpg" style="width: 100%">
+								<div class="img-txtblock box">
+									<h1>Your pet, our passion.</h1> 
+									<h1>We make pet sitting a happier, better, and caring experience.</h1>
+								</div>
+							</div>
+					</div>
+
+					<div class="slides fade">
+							<div style="max-width: 100%">
+								<img src="images/pets3.jpg" style="width:100%">
+								<div class="img-txtblock box">
+									<h1>Your pet, our passion.</h1> 
+									<h1>We make pet sitting a happier, better, and caring experience.</h1>
+								</div>
+							</div>
+					</div>
+
+					<div class="slides fade">
+							<div style="max-width: 100%">
+								<img src="images/pets4.jpg" style="width:100%">
+								<div class="img-txtblock box">
+									<h1>Your pet, our passion.</h1> 
+									<h1>We make pet sitting a happier, better, and caring experience.</h1>
+								</div>
+							</div>
+					</div>
+
+					<div class="slides fade">
+							<div style="max-width: 100%">
+								<img src="images/pets5.jpg" style="width:100%">
+								<div class="img-txtblock box">
+									<h1>Your pet, our passion.</h1> 
+									<h1>We make pet sitting a happier, better, and caring experience.</h1>	
+								</div>
+							</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="imgrow" style="background-color: #2a8227">
+				<div class="imgcol">
+					<img src="images/cashonly.png" style="width: 100%">
+					<div class="centeredtext">
+						<h2> Payment by cash only. </h2>
+					</div>
+				</div>
+
+				<div class="imgcol">
+					<img src="images/smileydog.png" style="width: 100%">
+					<div class="centeredtext">
+						<h2>Guaranteed pet safety.</h2>
+					</div>
+				</div>
+
+				<div class="imgcol">
+					<img src="images/qualityservice.png" style="width: 100%">
+					<div class="centeredtext">
+						<h2>Quality service.</h2>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="sitter-row" style="background-color: #2a8227">
+				<div class="sitter-column">
+					<img src="images/topsit1.jpg" style="width:100%; height: 320px">
+				</div>
+
+				<div class="sitter-column">
+					<img src="images/topsit2.jpg" style="width:100%; height:320px">
+				</div>
+
+				<div class="sitter-column">
+						<img src="images/topsit3.jpg" style="width:100%; height: 320px">
+				</div>
+			</div>
+
+			<div class="container" style="background-color: #2a8227">
+				<a href="/topsitters" class="sit-button">VIEW TOP SITTERS</a>
+			</div>
+
+
+
+
+			<div class="contactbar">
+				<h2>Have questions about the app? Email us at <u>petsitters@gmail.com</u></h2>
+			</div>
+
+			
+		</body>
+
+		<script>
+
+			var slideIndex = 0;
+			showSlides();
+
+			function showSlides() {
+  				var i;
+  				var slides = document.getElementsByClassName("slides");
+  				for (i = 0; i < slides.length; i++) {
+    				slides[i].style.display = "none";
+  				}
+  				slideIndex++;
+  				if (slideIndex > slides.length) {slideIndex = 1}
+  				slides[slideIndex-1].style.display = "block";
+  				setTimeout(showSlides, 5000);
+			}	
+
+		</script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> {{fname}} | Profile </title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/profile.css">
+</head>
+<body class='background' style="background-image: url(/images/park.jpg);">
+
+    	<div class="appName"> 			
+
+		<img class="logo" src="/images/logo.jpg">
+		<h1> Pets Playground </h1>
+				
+	</div>
+
+
+	<nav id="header" >	
+		<a href="/homelogin/{{email}}">Home</a>
+		<a href="/topsitterslogin/{{email}}">Top Sitters</a>
+		<a href="/profile/{{email}}">Profile</a>
+		<a href="/">Logout</a>
+	</nav>
+
+    <form id="comment-rating" method="post">
+        <div class="commenting">
+            <span>Comment:</span> <br> <br> 
+            <textarea id="comment" name="comment" style="width:1000px;height:50px">Input Comment Here</textarea> <br> <br>
+
+            <span>Enter Rating Here: </span> <br> <br> 
+
+            <input type="radio" id="five" name="rating" value="5"> <span> 5 </span> <br>
+            <input type="radio" id="five" name="rating" value="4"> <span> 4 </span> <br>
+            <input type="radio" id="five" name="rating" value="3"> <span> 3 </span> <br>
+            <input type="radio" id="five" name="rating" value="2"> <span> 2 </span> <br>
+            <input type="radio" id="five" name="rating" value="1"> <span> 1 </span> <br> <br>
+
+            <input type="submit" class="submit-btn"  value="Comment & Rate">
+        </div>
+    </form>
+
+</body>
+</html>

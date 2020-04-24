@@ -1,0 +1,207 @@
+
+.uinfo {
+
+    position:relative;
+    top:15%;
+    left: 5%;
+    width:90%;
+    height:575px;
+    border-width:thin;
+    border-style:solid;
+    border-color:#f1f1f1;
+    color:white;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+
+}
+
+.sinfo {
+
+    position:relative;
+    top:15%;
+    left: 5%;
+    width: 90%;
+    height:575px;
+    border-width:thin;
+    border-style:solid;
+    border-color:#f1f1f1;
+    color:white;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+
+}
+
+.uicon {
+
+    position:relative;
+    top: 5%;   
+    left: 10%; 
+    width:150px;
+    height:150px;
+    border-width:thin;
+    border-style:solid;
+    border-color:#DFE3EE;
+    background-color:white;
+}
+
+.info {
+
+    position:relative;
+    top:25%;
+    left:-17%;
+    width:1150px;
+    height:150px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.s2info {
+
+    position:relative;
+    top:10%;
+    left:-19%;
+    width:1150px;
+    height:150px;
+    font-size: 20px;
+
+}
+
+.edit-btn {
+
+    position:relative;
+    top:175px;
+    left: 12%;
+    height:40px;
+    width:150px;
+    border-width:thin;
+    border-style:solid;
+    color: black;
+    background-color: white;
+}
+
+.edit-btn:hover {
+
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.uheader {
+
+    position: relative;
+    left: 10%;
+    font-size:25px;
+    font-style:italic;
+}
+
+.sheader {
+
+    position: relative;
+    left: 8%;
+    font-size:25px;
+    font-style:italic;
+
+}
+.ubooking {
+
+    position: relative;
+    left: 45%;
+    font-size:25px;
+    font-style:italic;
+}
+
+.comment {
+
+    position: relative;
+    width:69%;
+    height:575px;
+    top:-44.15%;
+    left:575px;
+    border-width:thin;
+    border-style:solid;
+    border-color:#f1f1f1;
+    color:white;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+    overflow-y: scroll;
+    text-align: left;
+}
+
+.cheader {
+    position:relative;
+    right:0;
+    top:0;
+    font-size:25px;
+    font-style:italic;
+}
+
+.comments {
+
+    position:relative;
+    left:10px;
+    text-align: left;
+}
+
+.bookings {
+
+    position: relative;
+    width:69%;
+    height:575px;
+    top:-64%;
+    left:31%;
+    color:white;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+    overflow-y: scroll;
+    text-align: left;
+
+}
+
+.comments {
+
+    position: relative;
+    width:69%;
+    height:575px;
+    top:-67.5%;
+    left:31%;
+    color:white;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+    overflow-y: scroll;
+    text-align: left;
+
+}
+
+.sitter-btn {
+
+    position:relative;
+    top:160px;
+    left: 6%;
+    height:40px;
+    width:150px;
+    border-width:thin;
+    border-style:solid;
+    color: black;
+    background-color: white;
+}
+
+.sitter-btn:hover {
+
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.commenting {
+
+    position: relative;
+    width:69%;
+    height:300px;
+    top:300px;
+    left:15%;
+    color:white;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+    text-align: center;
+
+}

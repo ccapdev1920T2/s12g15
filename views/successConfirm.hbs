@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Booking Success </title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/profile.css">
+    <link rel="stylesheet" type="text/css" href="/css/confirmbooking.css">
+</head>
+<body class='background' style="background-image: url(/images/park.jpg);">
+
+<div class="appName"> 			
+
+	<img class="logo" src="/images/logo.jpg">
+	<h1> Pets Playground </h1>
+			
+</div>
+
+
+<nav id="header" >	
+    <a href="/homelogin/{{email}}">Home</a>
+    <a href="/topsitterslogin/{{email}}">Top Sitters</a>
+    <a href="/profile/{{email}}">Profile</a>
+    <a href="/">Logout</a>
+</nav>
+
+    <div id="container">
+        <div id="content">
+            <h1 id="title"> Succesfully Booked <br> {{fname}} </h1>
+            <p> Please Press the Button to go back to Profile </p> <br>
+
+                <a class="book buttoncenter" style="left: 19%" href='/profile/{{email}}'>
+                    RETURN
+                </a>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Home </title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/login-signup.css">
+</head>
+<body class='background' style="background-image: url(images/park.jpg);">
+
+<div class="appName"> 			
+
+	<img class="logo" src="images/logo.jpg">
+	<h1> Pets Playground</h1>
+			
+</div>
+
+<nav id="header" >
+    <a href="/">Home</a>
+    <a href="/topsitters">Top Sitters</a>
+    <a href="/login">Account</a>
+</nav>
+
+<div id="container">
+    <div id="content">
+        <div class='form-box'>
+            <div class='button-box'>
+                <a href='/login'>
+                 <button type="button" class="toggle-btn"> Login </button>                
+                </a>
+                <a href='/register'>
+                    <button type="button" class="toggle-btn"> Register </button>                
+                </a>
+            </div>
+            
+            <div class="social-icons">
+                <img src="images/facebook.png">
+                <img src="images/twitter.png">
+                <img src="images/insta.png">
+            </div>      
+
+            <form class="input-group" id="signup" method="post">
+				<input name="uname" id="uname" class="input-field" placeholder="Enter Username" type="text" required> 
+				<input name="email" id="email" class="input-field" placeholder="Enter Email" type="email" required> 
+				<input name="address" id="address" class="input-field" placeholder="Enter Address" type="text" required>                
+				<input name="pword" id="pword" class="input-field" placeholder="Enter Password" type="password" required> 
+				<input name="cpword" id="cpword" class="input-field" placeholder="Confirm Password" type="password" required>
+                <input type="checkbox" class="check-box"> <span>I Agree to the Terms and Conditions</span> 
+				<button type="submit" class="submit-btn">Register</button>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

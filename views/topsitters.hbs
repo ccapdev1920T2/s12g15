@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title> Top Sitters </title>
+			<link rel="stylesheet" type="text/css" href="/css/main.css">
+			<link rel="stylesheet" type="text/css" href="/css/topsitters.css">
+		</head>
+
+		<body style="background-image: url(/images/background2.jpg)">
+
+			<div class="appName"> 			
+
+				<img class="logo" src="images/logo.jpg">
+				<h1> Pets Playground</h1>
+			
+			</div>
+
+			<nav id="header" >
+			    <a href="/">Home</a>
+			    <a href="/topsitters">Top Sitters</a>
+			    <a href="/login">Account</a>
+			</nav>
+
+
+			<br>
+			<br>
+			<br>
+
+			<h1 style="font-family: Arial; margin-left: 100px; margin-top: 10px; color: black; font-size: 30px">
+				<b>Highest Rated Sitters</b>
+			</h1>
+
+			<br>
+
+			{{#each details}}
+			
+				<div class="container" style="padding-left: 10%">
+						<div class="prof-card">
+						
+							<img src="{{image}}" style="width: 275px; height: 194px">
+							<h1 style="font-size: 22px"> {{fname}} </a> </h1> <br>
+							<p class="prof-title ptop">{{prefer}}</p>
+							<p> {{address}} </p>
+							<p> {{available}} </p>
+							<p> Ratings: {{rating.rateavg}}/5 out of ({{rating.ratecount}}) </p> <br> <br>
+						
+						</div>
+				</div>
+
+			{{/each}}
+
+		</body>
+	</html>

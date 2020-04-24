@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> {{fname}} | Profile </title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/profile.css">
+</head>
+<body class='background' style="background-image: url(/images/park.jpg);">
+
+	<div class="appName"> 			
+
+		<img class="logo" src="/images/logo.jpg">
+		<h1> Pets Playground </h1>
+				
+	</div>
+
+
+	<nav id="header" >	
+		<a href="/homelogin/{{email}}">Home</a>
+		<a href="/topsitterslogin/{{email}}">Top Sitters</a>
+		<a href="/profile/{{email}}">Profile</a>
+		<a href="/">Logout</a>
+	</nav>
+
+	<div class="sinfo">
+		
+		<span class="sheader">Sitter Info</span> <br> <br>
+		
+		<img class="uicon" src="/images/profile.png" alt="pic">
+
+		<div class="s2info">	
+			<p>Full Name: {{fname}} </p> <br> 
+            <p>Prefers: {{prefer}} </p> <br> 
+			<p>Address: {{address}} </p> <br> 
+            <p>{{available}}</p> <br>
+            <p>Ratings: {{rating.rateavg}}/5 out of ({{rating.ratecount}}) </p>
+		</div>
+
+        <br>
+
+		<a href='/confirmBooking/{{email}}/{{fname}}'>
+			<button class="sitter-btn">Book</button>
+		</a>
+
+        <a href='/comment-rating/{{email}}/{{fname}}'>
+			<button class="sitter-btn">Rate/Comment</button>
+		</a>
+
+		<div class="comments">
+			<span class="ubooking">Comments</span> <br> <br>
+
+			{{#each results}}
+			<p> <strong>{{userEmail}}</strong>: {{comment}} Rating: ({{rate}}/5) </p> <br>	
+			{{/each}}
+			
+		</div>
+	</div>
+
+
+</body>
+</html>

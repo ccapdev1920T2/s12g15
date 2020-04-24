@@ -1,0 +1,34 @@
+.book {
+	box-shadow:inset 0px 1px 0px 0px #9acc85;
+	background:linear-gradient(to bottom, #74ad5a 5%, #68a54b 100%);
+	background-color:#74ad5a;
+	border-radius:15px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:60px;
+	padding:5px 50px;
+	text-decoration:none;
+	position: relative;
+	float: left;
+	width: 500px;
+	height: 100px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+
+}
+.book:hover {
+	background:linear-gradient(to bottom, #68a54b 5%, #74ad5a 100%);
+	background-color:#68a54b;
+}
+.book:active {
+	position:relative;
+	top:1px;
+}
+
+.buttoncenter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
