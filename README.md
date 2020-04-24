@@ -30,20 +30,14 @@ node index.js
 ```
 app listening at port 9090
 Connected to: mongodb://localhost:27017/ccapdev-group15
-
+```
 7. To test our web application. Go to the link below to access the web application:
 ```
 http://localhost:9090/
 ```
 8. After doing this the predefined Sitters will be put into the database, by going to the homepage before logging in, and the data added will be shown in the command prompt as well. Even if you repeatedly go back to the homepage it should be able to check whether there are already sitters in the DB or not.
-```
-
 9. After this Press on the Account Button on the Navigation Bar, which would lead you to thew login/register page. So first you would need to register an account.
-```
-
 10. After Registering an account, it should redirect you into your profile page where you can see the data you have entered about yourself. 
-```
-
 11. After doing this then you can start using our application unless when you choose to logout, whcih then you will not be able to do any of the functions to be able to book a sitter. The you can login to your account again.
 
 ##Authors
