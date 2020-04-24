@@ -40,7 +40,7 @@ http://localhost:9090/
 10. After Registering an account, it should redirect you into your profile page where you can see the data you have entered about yourself. 
 11. After doing this then you can start using our application unless when you choose to logout, whcih then you will not be able to do any of the functions to be able to book a sitter. The you can login to your account again.
 
-##Authors
+## Authors
 * LING, LANZ PHILIP	
 * ABELGAS, KEVIN
 * BOOL, JEREMIAH
@@ -48,7 +48,7 @@ http://localhost:9090/
 ## Acknowledgements
 * Sir Arren Antioquia, for the knowlege he gave us prior to developing the MP.
 
-##Notes
+## Notes
 1) All Views are Complete
 2) All routes are implemented and accessible with navigational links/buttons within the app. 
 3) Data is being loaded from the backend and could be retrieved from MongoDB database.
