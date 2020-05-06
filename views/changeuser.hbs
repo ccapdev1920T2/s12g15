@@ -26,18 +26,23 @@
 
 	<div class="uinfo">
 		
-		<p class="uheader1">Edit User Info</p>
-		
-		<div class="uicon">
-			<img src="/images/user.jpg" alt="logo"> <br> <br> <br>
-		</div>
+		<p class="uheader1">Change Username</p> <br><br><br><br><br>
 
-		<br> <br> <br> <br> <br> <br>
-		<div class="container">
-			<a href="/changeuser/{{email}}" class="sit-button"> change username </a> <br>
- 			<a href="/changeaddress/{{email}}" class="sit-button"> change address </a> <br>
-			<a href="/changepw/{{email}}" class="sit-button"> change password </a>
-		</div>
+		<p class="uheader"> Current Username: {{uname}} </p> <br>
+
+		<form id="edit-profile" method="post">
+			<input name="uname" id="uname" class="input-field" placeholder="Enter Username" type="text" required> <br><br>
+
+			<input type="submit" class="edit-btn">
+
+		</form>
+
+		<br><br><br><br>
+
+		<a href='/profile/{{email}}'>
+			<button class="edit-btn"> Return </button>
+		</a>
+
 
 <!--
 	<form id="edit-profile" method="post">

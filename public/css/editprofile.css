@@ -16,7 +16,6 @@
 }
 
 .uicon {
-
     position:relative;
     top: 5%;   
     left: 25%; 
@@ -31,8 +30,7 @@
 #edit-profile {
 
     position:relative;
-    top: 20%;
-    left:-5%;
+    top: 10%;
 }
 .info {
 
@@ -64,9 +62,8 @@
 
 .uheader {
     position:relative;
-    top:10%;
-    left:-10%;
-    top:0;
+    top: 2%;
+    right: 2%;
     font-size:25px;
     font-style:italic;
 }
@@ -76,4 +73,35 @@
     width:300px;
     height:20px;
     border-radius: 3px;
+}
+
+.sit-button {
+    background-color:#44c767;
+    border-radius:28px;
+    border:1px solid #18ab29;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:17px;
+    padding:10px 21px;
+    margin: 15px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #2f6627;
+    position: relative;
+    width: 160px;
+}
+.sit-button:hover {
+    background-color:#5cbf2a;
+}
+.sit-button:active {
+    position:relative;
+    top:1px;
+}
+
+.uheader1 {
+    position:relative;
+    top: 2%;
+    right: 6%;
+    font-size:25px;
 }

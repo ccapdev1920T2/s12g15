@@ -5,6 +5,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link rel="stylesheet" type="text/css" href="/css/profile.css">
+    <link rel="stylesheet" type="text/css" href="/css/modalbox.css">
+    <link rel="stylesheet" type="text/css" href="/css/commentbox.css">
 </head>
 <body class='background' style="background-image: url(/images/park.jpg);">
 
@@ -27,7 +29,7 @@
 		
 		<span class="sheader">Sitter Info</span> <br> <br>
 		
-		<img class="uicon" src="/images/profile.png" alt="pic">
+		<img class="uicon" src="/images/profile.png" alt="pic" style="left: 10%">
 
 		<div class="s2info">	
 			<p>Full Name: {{fname}} </p> <br> 
@@ -39,13 +41,56 @@
 
         <br>
 
-		<a href='/confirmBooking/{{email}}/{{fname}}'>
-			<button class="sitter-btn">Book</button>
-		</a>
+		<button class="sitter-btn" id="modalbook" style="left: 3%">Book</button>
 
-        <a href='/comment-rating/{{email}}/{{fname}}'>
-			<button class="sitter-btn">Rate/Comment</button>
-		</a>
+		<div id="bookModal" class="modal">
+
+  		<!-- Modal content -->
+  			<div class="modal-content">
+    			<div class="modal-header">
+      				<span class="close">&times;</span>
+      				<h1>Book {{fname}}?</h1>
+    		</div>
+    			<div class="modal-body">
+      				<p> <a class="book buttoncenter" style="left: 2%" href="/successconfirm/{{email}}/{{fname}}"> CONFIRM </a> </p>
+      				<p> <a class="book buttoncenter" style="left: 8%" href="/sitterProfile/{{email}}/{{fname}}"> CANCEL </a> </p> <br>
+        			
+    			</div>
+  			</div>
+
+		</div>
+		
+
+
+		<button class="sitter-btn" id="modalcmt">Rate/Comment</button>
+
+		<div id="cmtModal" class="modal">
+			<div class="modal-content">
+    			<div class="modal-header">
+      				<span class="close">&times;</span>
+      				<h1>Rating/Comment</h1>
+    		</div>
+    			<div class="modal-body2">
+    				<form id="comment-rating" method="post">
+    					<textarea class="commentArea" id="comment" name="comment">Input Comment Here</textarea>
+
+    					<div class="ratingContainer">
+    						<input type="radio" id="five" name="rating" value="5"> <span> 5 </span> <br>
+            				<input type="radio" id="five" name="rating" value="4"> <span> 4 </span> <br>
+            				<input type="radio" id="five" name="rating" value="3"> <span> 3 </span> <br>
+            				<input type="radio" id="five" name="rating" value="2"> <span> 2 </span> <br>
+            				<input type="radio" id="five" name="rating" value="1"> <span> 1 </span> <br> <br>
+    					</div>
+
+    					<input type="submit" class="commentBtn" style=" border-color: #74ad5a; color: black; background-color: white" href="/successComment/{{email}}/{{fname}}" value="Comment & Rate">
+
+    				</form>
+
+        			
+    			</div>
+  			</div>
+  		</div>
+
 
 		<div class="comments">
 			<span class="ubooking">Comments</span> <br> <br>
@@ -59,4 +104,36 @@
 
 
 </body>
+
+<script>
+	// booking modal script
+	var modalbook = document.getElementById("bookModal");
+	var btn1 = document.getElementById("modalbook");
+	var span1 = document.getElementsByClassName("close")[0];
+
+	btn1.onclick = function() {
+  	modalbook.style.display = "block";
+	}
+
+	span1.onclick = function() {
+  	modalbook.style.display = "none";
+	}
+
+
+	//rating/comment modal script
+	var modalcmt = document.getElementById("cmtModal");
+	var btn2 = document.getElementById("modalcmt");
+	var span2 = document.getElementsByClassName("close")[1];
+
+	btn2.onclick = function() {
+  	modalcmt.style.display = "block";
+	}
+
+	span2.onclick = function() {
+  	modalcmt.style.display = "none";
+	}
+
+</script>
+
+
 </html>

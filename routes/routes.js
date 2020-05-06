@@ -23,11 +23,17 @@ app.get('/homelogin/:email', controller.getHomelogin);
 
 app.get('/register', signupController.getSignUp);
 
+app.get('/checkEmail', signupController.checkEmail);
+
+app.get('/checkUname', signupController.checkUname);
+
 app.post('/register', signupController.postSignUp);
 
 app.get('/registerFail', signupController.getRegisterFail);
 
 app.get('/login', logInController.getLogin);
+
+app.get('/checkEmailLogin', logInController.checkEmailLogin);
 
 app.post('/login', logInController.checkLogin);
 
@@ -43,12 +49,22 @@ app.get('/topsitterslogin/:email', sitterController.getSitterLogin);
 
 app.get("/sitterProfile/:email/:fname", sitterProfileController.getSitterProfile);
 
-app.get("/confirmBooking/:email/:fname", sitterProfileController.getConfirmBooking);
-
 app.get("/successConfirm/:email/:fname", sitterProfileController.confirmBooking);
 
-app.get("/comment-rating/:email/:fname", sitterProfileController.getCommentRatingForm);
+app.get('/changeuser/:email', editprofileController.getEditUser);
 
-app.post("/comment-rating/:email/:fname", sitterProfileController.postCommentRatingFrom);
+app.post('/changeuser/:email', editprofileController.editUser);
+
+app.get('/changeaddress/:email', editprofileController.getEditAddress);
+
+app.post('/changeaddress/:email', editprofileController.editAddress);
+
+app.get('/changepw/:email', editprofileController.getEditPW);
+
+app.post ('/changepw/:email', editprofileController.editPW);
+
+app.post("/sitterProfile/:email/:fname", sitterProfileController.postCommentRatingFrom);
+
+app.get("/successCancel/:email/:sitterName", profileController.endBooking);
 
 module.exports = app; 

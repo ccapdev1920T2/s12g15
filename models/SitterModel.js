@@ -9,7 +9,7 @@ var UserSchema = new mongoose.Schema({
 
     prefer: {
         type: String,
-        rewuired: false
+        required: false
     },
 
     address: {

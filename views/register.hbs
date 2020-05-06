@@ -5,6 +5,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link rel="stylesheet" type="text/css" href="/css/login-signup.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src='/js/signup.js' type="text/javascript"></script>
 </head>
 <body class='background' style="background-image: url(images/park.jpg);">
 
@@ -45,11 +48,11 @@
 				<input name="address" id="address" class="input-field" placeholder="Enter Address" type="text" required>                
 				<input name="pword" id="pword" class="input-field" placeholder="Enter Password" type="password" required> 
 				<input name="cpword" id="cpword" class="input-field" placeholder="Confirm Password" type="password" required>
-                <input type="checkbox" class="check-box"> <span>I Agree to the Terms and Conditions</span> 
-				<button type="submit" class="submit-btn">Register</button>
+                <input type="checkbox" id="cbox" class="check-box"> <span>I Agree to the Terms and Conditions</span> 
+				<input id="submit" type="submit" class="submit-btn" value="Register" disabled>
             </form>
-
         </div>
+        <p id="error" style="height:40px;width:60%;margin-left:20%"></p>
     </div>
 </div>
 

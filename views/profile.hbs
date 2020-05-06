@@ -5,6 +5,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link rel="stylesheet" type="text/css" href="/css/profile.css">
+    <link rel="stylesheet" type="text/css" href="/css/modalbox.css">
 </head>
 <body class='background' style="background-image: url(/images/park.jpg);">
 
@@ -37,20 +38,26 @@
 			<p>Address: {{address}} </p> <br> 
 		</div>
 
+
 		<a href='/editprofile/{{email}}'>
-			<button class="edit-btn">Edit Profile</button>
+			<button class="edit-btn" style="left: 10%">Edit Profile</button>
 		</a>
+
+		</div>
+
 
 		<div class="bookings">
 			<span class="ubooking">Bookings</span> <br> <br>
-
 			{{#each results}}
-			<p> Your Currently Booked to {{sitterName}}</p>	<br>	
+				<span> You Are Currently Booked to {{sitterName}}</span>
+				<a href="/successCancel/{{email}}/{{sitterName}}">
+				<button class="cancel-btn" style="left: 2%">X</button> 
+				</a> <br>	
 			{{/each}}
-			
 		</div>
 	</div>
 
 
 </body>
+
 </html>

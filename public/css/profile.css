@@ -4,6 +4,7 @@
     position:relative;
     top:15%;
     left: 5%;
+    margin-bottom: 5%;
     width:90%;
     height:575px;
     border-width:thin;
@@ -20,6 +21,7 @@
     position:relative;
     top:15%;
     left: 5%;
+    margin-bottom: 5%;
     width: 90%;
     height:575px;
     border-width:thin;
@@ -35,7 +37,7 @@
 
     position:relative;
     top: 5%;   
-    left: 10%; 
+    left: 8%; 
     width:150px;
     height:150px;
     border-width:thin;
@@ -48,7 +50,7 @@
 
     position:relative;
     top:25%;
-    left:-17%;
+    left:-27%;
     width:1150px;
     height:150px;
     font-size: 20px;
@@ -58,8 +60,8 @@
 .s2info {
 
     position:relative;
-    top:10%;
-    left:-19%;
+    top:7%;
+    left:-27%;
     width:1150px;
     height:150px;
     font-size: 20px;
@@ -70,7 +72,7 @@
 
     position:relative;
     top:175px;
-    left: 12%;
+    left: 10%;
     height:40px;
     width:150px;
     border-width:thin;
@@ -89,7 +91,7 @@
 .uheader {
 
     position: relative;
-    left: 10%;
+    left: 8%;
     font-size:25px;
     font-style:italic;
 }
@@ -104,8 +106,6 @@
 }
 .ubooking {
 
-    position: relative;
-    left: 45%;
     font-size:25px;
     font-style:italic;
 }
@@ -125,6 +125,7 @@
     background-color: rgba(0,0,0, 0.4);
     overflow-y: scroll;
     text-align: left;
+    resize: none;
 }
 
 .cheader {
@@ -145,15 +146,15 @@
 .bookings {
 
     position: relative;
-    width:69%;
+    width:65%;
     height:575px;
-    top:-64%;
+    top:-53%;
     left:31%;
     color:white;
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0, 0.4);
     overflow-y: scroll;
-    text-align: left;
+    text-align: center;
 
 }
 
@@ -162,7 +163,7 @@
     position: relative;
     width:69%;
     height:575px;
-    top:-67.5%;
+    top:-71.5%;
     left:31%;
     color:white;
     background-color: rgb(0,0,0);
@@ -175,7 +176,7 @@
 .sitter-btn {
 
     position:relative;
-    top:160px;
+    top:130px;
     left: 6%;
     height:40px;
     width:150px;
@@ -205,3 +206,13 @@
     text-align: center;
 
 }
+
+.cancel-btn {
+
+    height: 20px;
+    width: 20px;
+    font-size: 12px;
+    text-align: center;
+
+}
+

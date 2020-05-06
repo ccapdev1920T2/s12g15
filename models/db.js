@@ -5,7 +5,7 @@ const User = require('./UserModel.js');
 
 const Sitter = require('./SitterModel.js');
 
-const url = 'mongodb://localhost:27017/ccapdev-group15';
+const url = 'mongodb+srv://PetSitting:PetSitting123@petsittingapp-qnbs9.mongodb.net/test';
 
 const options = {
     useUnifiedTopology: true,

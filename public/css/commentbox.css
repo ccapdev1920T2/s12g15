@@ -1,0 +1,39 @@
+.commentArea {
+	margin-top: 30px;
+	resize: none;
+	position: relative;
+	float: left;
+	height: 100px;
+	width: 500px;
+}
+
+span {
+	font-family: Arial;
+	font-size: 14px;
+}
+
+
+.ratingContainer {
+	margin-top: 28px;
+	margin-left: 10px;
+	position: relative;
+	float: left;
+	height: 110px;
+	width: 100px;
+}
+
+.commentBtn {
+	position: absolute;
+	right: 3%;
+	bottom: 30%;
+	float: right;
+    height:50px;
+    width:150px;
+    border-width:thin;
+    border-style:solid;
+    color: #74ad5a;
+    background-color: #74ad5a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> {{uname}} | Profile </title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/profile.css">
+    <link rel="stylesheet" type="text/css" href="/css/modalbox.css">
+</head>
+<body class='background' style="background-image: url(/images/park.jpg);">
+
+	<div class="appName"> 			
+
+		<img class="logo" src="/images/logo.jpg">
+		<h1> Pets Playground </h1>
+				
+	</div>
+
+
+	<nav id="header" >	
+		<a href="/homelogin/{{email}}">Home</a>
+		<a href="/topsitterslogin/{{email}}">Top Sitters</a>
+		<a href="/profile/{{email}}">Profile</a>
+		<a href="/">Logout</a>
+	</nav>	
+
+	<div class="uinfo">
+		
+		<span class="uheader">User Info</span>
+
+		<div class="uicon">
+			<img src="/images/user.jpg" alt="logo">
+		</div>
+
+		<div class="info">	
+			<p>Username: {{uname}} </p> <br> 
+            <p>Email: {{email}} </p> <br> 
+			<p>Address: {{address}} </p> <br> 
+		</div>
+
+		<a href='/editprofile/{{email}}'>
+			<button class="edit-btn">Edit Profile</button>
+		</a>
+
+		<div class="bookings">
+			<span class="ubooking">Bookings</span> <br> <br>
+
+			{{#each results}}
+			<p> You Are Currently Booked to {{sitterName}}</p>	<br>	
+			{{/each}}
+			
+		</div>
+	</div>
+
+
+</body>
+</html>

@@ -45,39 +45,21 @@ const sitterProfileController = {
             }
         });
     },
-
-    getConfirmBooking: function (req, res) {
-
-        var email = req.params.email;
-        var fname = req.params.fname;
-        var query = {email: email, fname: fname}
-
-        res.render('confirmBooking', query);
-    },
     
     confirmBooking: function(req,res) {
 
         var email = req.params.email;
         var fname = req.params.fname;
-        var query = {email: email, fname: fname}
+        var query = {email: email, fname: fname};
 
         db.insertOne(Booking, {
-            userEmail: email,
+            email: email,
             sitterName: fname,
             Done: false
         });
 
         res.render('successConfirm', query);
 
-    },
-
-    getCommentRatingForm: function (req, res) {
-
-        var email = req.params.email;
-        var fname = req.params.fname;
-        var query = {email: email, fname: fname}
-
-        res.render('comment-rating', query);
     },
 
     postCommentRatingFrom: function (req, res) {

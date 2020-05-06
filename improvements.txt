@@ -1,0 +1,18 @@
+Points of improvement:
+
+- In the sign-up form, your web application allows the user to use the same username even if the username has already been registered for another user in the database. The username should be unique (Done) 
+-----
+
+- The sign up form allows the user to submit the form even if the password and the confirm password do not match. It also allows the user to submit the form even if the user has not checked the "I Agree to the Terms and Conditions" button. (Half Done)
+
+- If the user entered something invalid in the sign-up form or the login form (invalid credentials), the web application should redirect the user back to the forms with the errors displayed.
+
+- In the edit profile feature, the user should be allowed to just changed a single field, and should not require the user to change all fields - username, address, and password.
+
+- The rating/comment feature should be in the same page as the profile of the pet sitter.
+
+- The booking feature should not redirect the user to another web page just to confirm. It is preferable if the confirm is in the same page as the profile of the pet sitter.
+
+- When will the booking be removed from the user side?
+
+For phase 3, don't forget to fix these issues, implement client-side and server-side validation, password hashing, and session management before deploying the web application to Heroku.
