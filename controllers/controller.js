@@ -11,8 +11,6 @@ const controller = {
         res.render('home');
 
         db.findOne(Sitter,{fname: "Tony Stark"},null ,function(result){
-
-            console.log(result);
             
             if(!result) {
 
@@ -27,7 +25,17 @@ const controller = {
                     {fname: "Roza Rosales", prefer: "Prefers Fishes and Dogs", address: "Makati City", available: "Currently Available", image: "/images/roza.jpg"},
                     {fname: "Vinnie Henderson", prefer: "Prefers Dogs or Cats", address: "San Juan", available: "Currently Available", image: "/images/vinnie.jpg"},
                     {fname: "Lucifer Morningstar", prefer: "Prefers Dogs, Birds and Cats", address: "Paranaque City", available: "Currently Available", image:"/images/lucifer.jpg"},
-                    {fname: "Lori Beltran", prefer: "Prefers Fishes", address: "Paranaque City", available: "Currently Available", image: "/images/lori.jpg"}
+                    {fname: "Lori Beltran", prefer: "Prefers Fishes", address: "Paranaque City", available: "Currently Available", image: "/images/lori.jpg"},
+                    {fname: "John Smith", prefer: "Prefers Dogs", address: "Paranaque City", available: "Currently Available", image: "/images/john.jpg"},
+                    {fname: "Kim Anderson", prefer: "Prefers Cats", address: "Quezon City", available: "Currently Available", image: "/images/kim.jpg"},
+                    {fname: "Sam Garcia", prefer: "Prefers Birds", address: "Makati City", available: "Currently Available", image: "/images/sam.jpg"},
+                    {fname: "Bryce McCoy", prefer: "Prefers Cats", address: "Pasay City", available: "Currently Available", image: "/images/bryce.jpg"},
+                    {fname: "Tim Martin", prefer: "Prefers Fishes", address: "Metro Manila", available: "Currently Available", image: "/images/tim.jpg"},
+                    {fname: "Jim Burton", prefer: "Prefers Dogs and Cats", address: "San Juan", available: "Currently Available", image: "/images/jim.jpg"},
+                    {fname: "Barry McAllen", prefer: "Prefers Fishes and Cats", address: "Laguna", available: "Currently Available", image: "/images/barry.jpg"},
+                    {fname: "Chris Redfield", prefer: "Prefers Dogs", address: "Makati City", available: "Currently Available", image: "/images/chris.jpg"},
+                    {fname: "Ana Bacon", prefer: "Prefers Cats", address: "Makati City", available: "Currently Available", image: "/images/ana.jpg"},
+                    {fname: "Dan McBride", prefer: "Prefers Cats", address: "Pasay City", available: "Currently Available", image: "/images/dan.jpg"}
                     ], function(flag) {
                         if(flag) 
                             console.log('success');
