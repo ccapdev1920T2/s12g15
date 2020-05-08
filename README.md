@@ -14,6 +14,10 @@ NodeJS and MongoDB must be installed in the PC.
 - [views](https://github.com/ccapdev1920T2/s12g15/tree/master/views) - This folder contains all hbs files to be rendered when requested from the server.
 - [index.js](https://github.com/ccapdev1920T2/s12g15/blob/master/index.js) - The main entry point of the web application.
 
+##Pets Playground in Heroku
+
+1. You may access the app in heroku by using the link https://petsplayground.herokuapp.com/
+
 ## Instructions
 1. Download the zip or create a clone of the repsitory
 2. Open Command Prompt 
@@ -22,7 +26,9 @@ NodeJS and MongoDB must be installed in the PC.
 ```
 npm install
 ```
-5. After running the installation,run the following command:
+npm install express-validator
+```
+5. After running the installation, run the following command:
 ```
 node index.js
 ```
@@ -39,6 +45,36 @@ http://localhost:3000/
 9. After this Press on the Account Button on the Navigation Bar, which would lead you to thew login/register page. So first you would need to register an account.
 10. After Registering an account, it should redirect you into your profile page where you can see the data you have entered about yourself. 
 11. After doing this then you can start using our application unless when you choose to logout, whcih then you will not be able to do any of the functions to be able to book a sitter. The you can login to your account again.
+
+## Accounts You May Use to Login
+
+1. Email: lanz_ling@dlsu.edu.ph Password: 12345
+2. Email: paolo@gmail.com 	Password: 123
+3. Email: zhupei@gmail.com	Password: 123
+4. Email: kevin@gmail.com	Password: 123
+
+## Sitter Available 
+
+1. Tony Stark
+2. Vikki Rice
+3. Kaine Moss
+4. Enzo Povey
+5. Gregg Throne
+6. Keagan Stott
+7. Roza Rosales
+8. Vinnie Henderson
+9. Lucifer Morningstar
+10. Lori Beltran
+11. John Smith
+12. Kim Anderson
+13. Sam Garcia
+14. Bryce McCoy
+15. Tim Martin
+16. Jim Burton
+17. Barry McAllen 
+18. Chris Redfield
+19. Ana Bacon
+20. Dan McBride
 
 ## Authors
 * LING, LANZ PHILIP	
