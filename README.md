@@ -14,7 +14,7 @@ NodeJS and MongoDB must be installed in the PC.
 - [views](https://github.com/ccapdev1920T2/s12g15/tree/master/views) - This folder contains all hbs files to be rendered when requested from the server.
 - [index.js](https://github.com/ccapdev1920T2/s12g15/blob/master/index.js) - The main entry point of the web application.
 
-##Pets Playground in Heroku
+## Pets Playground in Heroku
 
 1. You may access the app in heroku by using the link https://petsplayground.herokuapp.com/
 
