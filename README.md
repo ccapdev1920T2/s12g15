@@ -26,6 +26,8 @@ NodeJS and MongoDB must be installed in the PC.
 ```
 npm install
 ```
+and then...
+```
 npm install express-validator
 ```
 5. After running the installation, run the following command:
